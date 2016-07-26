@@ -6,7 +6,7 @@ var routes = require('./controllers/burgers_controller.js');
 
 var app = express();
 
-app.use('/static', express.static(__dirname + '/public'));
+app.use('/static', express.static(__dirname + '/public/assets/'));
 
 app.use(bodyParser.urlencoded({
   extended: false
@@ -19,11 +19,11 @@ app.engine('handlebars', handlebars({
 app.set('view engine', 'handlebars');
 
 //test route
-app.get('/', function(req, res){
-  res.send('Working!')
-})
+// app.get('/', function(req, res){
+//   res.send('Working!')
+// })
 
 //route for poduction
-// app.use('/', routes);
+app.use('/', routes);
 
 app.listen(process.env.PORT||3000);
