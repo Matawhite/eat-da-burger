@@ -1,0 +1,15 @@
+li {
+  list-style: none;
+}
+
+body {
+  background: url(diner.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#well2 {
+  width: 35%;
+}

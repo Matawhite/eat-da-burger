@@ -47,7 +47,7 @@ var orm = {
     });
   },
   //objColVals would be the columns and values that you want to update
-  //an example of objColVals would be {name: panther, sleepy: true}
+  //an example of objColVals would be {burger_name: pizza burger, devoured: true}
   updateOne: function(table, objColVals, condition, fn) {
     var queryString = 'UPDATE ' + table;
 
